@@ -32,13 +32,13 @@ Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is 
 
 - Switch webcam to off:
     
-    ![Screenshot](https://imgur.com/CQSlHe9.png)    
+    ![Screenshot](https://imgur.com/RLI0iWC.png)    
 
 - Sudo password input / once per application session:
     
     ![Screenshot](https://imgur.com/T7eUqHJ.png)    
 
-- Camera is off:
+- Webcam is off:
     
     ![Screenshot](https://imgur.com/nP3z07M.png)    
 
