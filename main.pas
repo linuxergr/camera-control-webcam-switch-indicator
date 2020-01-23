@@ -2,6 +2,8 @@ unit Main;
 
 {$mode objfpc}{$H+}
 
+// Created at 23th of January 2020 by Linuxer (https://gitlab.com/psposito), from scratch with Free Pascal
+
 interface
 
 uses
