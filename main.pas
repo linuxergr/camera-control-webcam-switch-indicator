@@ -1,6 +1,8 @@
 unit Main;
 
 {$mode objfpc}{$H+}
+{$warnings off}
+{$hints off}
 
 // Created at 23th of January 2020 by Linuxer (https://gitlab.com/psposito), from scratch with Free Pascal
 
@@ -72,12 +74,12 @@ end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
+    S                           := fpsystem('echo off');
     HasPassword                 := false;
     application.showmainform    := false;
     TrayIcon1.Hint              := 'Camera Switch';
     TrayIcon1.ShowIcon          := True;
     TrayIcon1.Show;
-
 end;
 
 procedure TForm1.MenuItem1Click(Sender: TObject);
@@ -109,6 +111,8 @@ end;
 procedure TForm1.MenuItem3Click(Sender: TObject);
 begin
     TrayIcon1.Hide;
+    PopupMenu1.Free;
+    TrayIcon1.Free;
     Halt (0);
 end;
 
