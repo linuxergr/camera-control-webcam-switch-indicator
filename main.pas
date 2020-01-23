@@ -27,6 +27,7 @@ type
     procedure MenuItem2Click(Sender: TObject);
     procedure MenuItem3Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
+    procedure TrayIcon1Click(Sender: TObject);
   private
 
   public
@@ -120,6 +121,11 @@ procedure TForm1.MenuItem4Click(Sender: TObject);
 begin
     HasPassword := false;
     ShowMessage('Password has been forgotten');
+end;
+
+procedure TForm1.TrayIcon1Click(Sender: TObject);
+begin
+    PopupMenu1.PopUp;
 end;
 
 end.
