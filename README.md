@@ -34,7 +34,7 @@ Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is 
     
     ![Screenshot](https://imgur.com/RLI0iWC.png)    
 
-- Sudo password input / once per application session:
+- Sudo password input, normally entered once per application session, or if Forget Password is executed:
     
     ![Screenshot](https://imgur.com/T7eUqHJ.png)    
 
