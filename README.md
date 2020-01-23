@@ -12,7 +12,7 @@ Background:
 
 - Camera monitor indicates the status of the camera, but it not enough to control the on/off status.
 - User cann not be all the time in front of the monitor, in order to check the webcam status.
-- Such solutions, as below, or plug in and out the usb cable, are considered unacceptable on any environment (home or business)
+- Such solutions, as below or by plugging in and out the usb cable, are considered funny (not to say rediculous) and unacceptable on any environment (home or business)
 
     ![Screenshot](https://imgur.com/MmQeg2Y.png)
 
