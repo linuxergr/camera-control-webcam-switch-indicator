@@ -32,7 +32,7 @@ Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is 
 
 - Switch webcam to off:
     
-    ![Screenshot](https://imgur.com/RLI0iWC.png)    
+    ![Screenshot](https://imgur.com/bbL3Hfv.png)    
 
 - Sudo password input, normally entered once per application session, or if Forget Password is executed:
     
@@ -41,6 +41,10 @@ Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is 
 - Webcam is off:
     
     ![Screenshot](https://imgur.com/nP3z07M.png)    
+
+- About: 
+
+    ![Screenshot](https://imgur.com/bbL3Hfv.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
