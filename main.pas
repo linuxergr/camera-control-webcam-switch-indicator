@@ -9,7 +9,11 @@ unit Main;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, Menus, Unix;
+  {$IFDEF UNIX}{$IFDEF UseCThreads}
+  cthreads,
+  {$ENDIF}{$ENDIF}
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, Menus, Unix,
+  unitAbout;
 
 type
 
@@ -20,6 +24,7 @@ type
     MenuItem2          : TMenuItem;
     MenuItem3          : TMenuItem;
     MenuItem4          : TMenuItem;
+    MenuItem5          : TMenuItem;
     PopupMenu1         : TPopupMenu;
     TrayIcon1          : TTrayIcon;
     procedure FormCreate(Sender: TObject);
@@ -27,6 +32,7 @@ type
     procedure MenuItem2Click(Sender: TObject);
     procedure MenuItem3Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
+    procedure MenuItem5Click(Sender: TObject);
     procedure TrayIcon1Click(Sender: TObject);
   private
 
@@ -36,6 +42,7 @@ type
 
 var
   Form1                 : TForm1;
+  //FormAbout             : TFormAbout;
   S                     : LongInt;
   n                     : Integer;
   HasPassword           : Boolean;
@@ -49,7 +56,7 @@ implementation
 
 procedure CameraOn;
 begin
-    S := fpsystem(concat('echo ',Password,' | sudo -S modprobe uvcvideo'));
+    S := fpsystem(concat('echo ', Password, ' | sudo -S modprobe uvcvideo'));
     if (S <> 0) then
        begin
            ShowMessage('Incorrect password');
@@ -59,7 +66,7 @@ end;
 
 procedure CameraOff;
 begin
-    S := fpsystem(concat('echo ',Password,' | sudo -S modprobe -r uvcvideo'));
+    S := fpsystem(concat('echo ', Password, ' | sudo -S modprobe -r uvcvideo'));
     if (S <> 0) then
        begin
            ShowMessage('Incorrect password');
@@ -123,10 +130,23 @@ begin
     ShowMessage('Password has been forgotten');
 end;
 
+procedure TForm1.MenuItem5Click(Sender: TObject);
+
+begin
+    FormAbout.Label1.Caption:='Project';
+    FormAbout.Label2.Caption:='Developer';
+    FormAbout.Label3.Caption:='Licence';
+    FormAbout.ListBox1.Items.Clear;
+    FormAbout.ListBox1.Items.Add('Camera Control On/Off Switch for Linux is a');
+    FormAbout.ListBox1.Items.Add('LGPL2 Free Pascal Project with LCL components,');
+    FormAbout.ListBox1.Items.Add('completely developed from scratch, at 23th, of');
+    FormAbout.ListBox1.Items.Add('January 2020 by Linuxer パスカリス スポシト');
+    FormAbout.Show;
+end;
+
 procedure TForm1.TrayIcon1Click(Sender: TObject);
 begin
     PopupMenu1.PopUp;
 end;
 
 end.
-
