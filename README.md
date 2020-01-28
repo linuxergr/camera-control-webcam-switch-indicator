@@ -49,7 +49,7 @@ Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is 
 
 - About: 
 
-    ![Screenshot](https://imgur.com/la3h6Sw.png)
+    ![Screenshot](https://imgur.com/XB9hrBY.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Project History
