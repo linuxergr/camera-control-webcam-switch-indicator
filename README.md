@@ -53,10 +53,11 @@ Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Project History
+
 - Created at 23th of January 2020, from scratch with Free Pascal
 - Redesigned and further Developed at 28th of January 2020, in order to provide Camera and Mic status alone with On/Off and Mute/Unmute fuctions     
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Why on Free (Object) Pascal:
+# [Why on Free (Object) Pascal?](https://dubst3pp4.github.io/post/2017-10-03-why-i-use-object-pascal/)
 
-[Main reasons](https://dubst3pp4.github.io/post/2017-10-03-why-i-use-object-pascal/)
+
