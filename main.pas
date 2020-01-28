@@ -4,178 +4,98 @@ unit Main;
 {$warnings off}
 {$hints off}
 
-// Created at 23th of January 2020, by Linuxer (https://gitlab.com/psposito), from scratch with Free Pascal
-// Redesigned and further Developed at 28th of January 2020, by Linuxer (https://gitlab.com/psposito)
-// to provide Camera and Mic status alone with On/Off and Mute/Unmute fuctions
+// Created at 23th of January 2020 by Linuxer (https://gitlab.com/psposito), from scratch with Free Pascal
 
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  Menus, UTF8Process, Unix, process, About;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, Menus, Unix,
+  unitAbout, PopupNotifier;
 
 type
 
   { TForm1 }
 
   TForm1 = class(TForm)
-    Button1: TButton;
-    Button2: TButton;
-    ImageListCam     : TImageList;
-    ImageListMic     : TImageList;
-    AProcess         : TProcessUTF8;
-    MenuItem1: TMenuItem;
-    MenuItem10: TMenuItem;
-    MenuItem11: TMenuItem;
-    MenuItem2: TMenuItem;
-    MenuItem3: TMenuItem;
-    MenuItem4: TMenuItem;
-    MenuItem5: TMenuItem;
-    MenuItem6: TMenuItem;
-    MenuItem7: TMenuItem;
-    MenuItem8: TMenuItem;
-    MenuItem9: TMenuItem;
-    PopupMenu1: TPopupMenu;
-    ProcessUTF8_1    : TProcessUTF8;
-    TrayIcon1        : TTrayIcon;
-    TrayIcon2        : TTrayIcon;
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
+    ImageList2: TImageList;
+    MenuItem1          : TMenuItem;
+    MenuItem2          : TMenuItem;
+    MenuItem3          : TMenuItem;
+    MenuItem4          : TMenuItem;
+    MenuItem5          : TMenuItem;
+    MenuItem6          : TMenuItem;
+    MenuItem7          : TMenuItem;
+    MenuItem8          : TMenuItem;
+    MenuItem9          : TMenuItem;
+    PopupMenu1         : TPopupMenu;
+    TrayIcon1          : TTrayIcon;
+    ImageList1         : TImageList;
     procedure FormCreate(Sender: TObject);
-    procedure MenuItem10Click(Sender: TObject);
+    procedure MenuItem1Click(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
     procedure MenuItem3Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
+    procedure MenuItem5Click(Sender: TObject);
     procedure MenuItem6Click(Sender: TObject);
     procedure MenuItem7Click(Sender: TObject);
-    procedure MenuItem9Click(Sender: TObject);
     procedure TrayIcon1Click(Sender: TObject);
-    procedure TrayIcon2Click(Sender: TObject);
   private
-    CamImageIndex    : integer;
-    MicImageIndex    : integer;
 
   public
 
   end;
 
 var
-   Form1               : TForm1;
-   S                   : LongInt;
-   MicSwitchStr        : String;
-   Password            : String;
-   isMicOn             : boolean;
-   HasPassword         : boolean;
+  Form1                 : TForm1;
+  S                     : LongInt;
+  n                     : Integer;
+  HasPassword           : Boolean;
+  Password              : String;
+  Bitmap                : TBitMap;
 
 implementation
 
-{$R *.lfm}
+{$R *.frm}
 
 { TForm1 }
 
-procedure GetMicCaptureStatus;
+procedure ScaleImageList(ImgList: TImageList; NewWidth, NewHeight: Integer);
 var
-     AStringList : TStringList;
-     AProcess    : TProcess;
+  TempImgList: TImageList;
+  TempBmp1: TBitmap;
+  TempBmp2: TBitmap;
+  I: Integer;
 begin
-     AProcess := TProcess.Create(nil);
-     AProcess.Executable := '/bin/sh';
-     AProcess.Parameters.Add('-c');
-     AProcess.Parameters.Add('amixer get Capture control');
-     AProcess.Options := AProcess.Options + [poWaitOnExit, poUsePipes];
-     AProcess.Execute;
-     AStringList := TStringList.Create;
-     AStringList.LoadFromStream(AProcess.Output);
-     //showmessage(Astringlist.Text) ;
-     MicSwitchStr := TrimLeft(RightStr(AStringList.Strings[AstringList.Count-1], 5));
-     //showmessage(AStringList.Strings[AstringList.Count-1]);
-     //showmessage(MicSwitchStr);
-     if CompareText(MicSwitchStr,'[On]') = 0 then
-        isMicOn := true
-     //if CompareText(MicSwitchStr,'[Off]') = 0 then
-     else
-        isMicOn := false;
-     //if isMicOn = true then
-     //   showmessage('Mic is on');
-     //if isMicOn = false then
-     //   showmessage('Mic is off');
-     AStringList.Free;
-     AProcess.Free;
-end;
+  TempImgList := TImageList.Create(nil);
+  TempBmp1 := TBitmap.Create;
+  TempBmp1.PixelFormat := pf32bit;
+  TempBmp2 := TBitmap.Create;
+  TempBmp2.PixelFormat := pf32bit;
+  TempBmp2.SetSize(NewWidth, NewHeight);
+  try
+    TempImgList.Width := NewWidth;
+    TempImgList.Height := NewHeight;
 
-procedure TForm1.Button1Click(Sender: TObject);  // Toggle Camera On/Off
-begin
-     CamImageIndex := (CamImageIndex + 1) mod 2;
-     //If ImageIndex=0 then
-     //   ShowMessage('Camera is On')
-     //else
-     //   ShowMessage('Camera is Off');
-     //GetImageList.GetIcon(ImageIndex, TrayIcon1.Icon);
-     ImageListCam.GetIcon(CamImageIndex, TrayIcon1.Icon);
-end;
+    for I := 0 to ImgList.Count - 1 do begin
+      // Load image for given index to temporary bitmap
+      ImgList.GetBitmap(I, TempBmp1);
 
-procedure TForm1.Button2Click(Sender: TObject);  // Toggle Microphne On/Off
-begin
-     MicImageIndex := (MicImageIndex + 1) mod 2;
-     //If ImageIndex=0 then
-     //   ShowMessage('Camera is On')
-     //else
-     //   ShowMessage('Camera is Off');
-     //GetImageList.GetIcon(ImageIndex, TrayIcon1.Icon);
-     ImageListMic.GetIcon(MicImageIndex, TrayIcon2.Icon);
-end;
+      // Clear transparent image background
+      TempBmp2.Canvas.Brush.Style := bsSolid;
+      TempBmp2.Canvas.Brush.Color := TempBmp2.TransparentColor;
+      TempBmp2.Canvas.FillRect(0, 0, TempBmp2.Width, TempBmp2.Height);
 
-procedure TForm1.FormCreate(Sender: TObject);
-begin
-     application.showmainform    := false;    // Hide Main form
-     HasPassword                 := false;
-     CamImageIndex               := 0;
-     MicImageIndex               := 0;
+      // Stretch image to new size
+      TempBmp2.Canvas.StretchDraw(Rect(0, 0, TempBmp2.Width, TempBmp2.Height), TempBmp1);
+      TempImgList.Add(TempBmp2, nil);
+    end;
 
-     GetMicCaptureStatus;
-
-     if DirectoryExists('/dev/v4l/') then
-        begin
-             ImageListCam.GetIcon(0, TrayIcon1.Icon);
-             //ShowMessage('Camera is On');
-        end
-     else
-        begin
-             ImageListCam.GetIcon(1, TrayIcon1.Icon);
-             //ShowMessage('Camera is Off');
-        end;
-
-     if isMicOn = true then
-        begin
-             ImageListMic.GetIcon(0, TrayIcon2.Icon);
-        end;
-
-     if isMicOn = false then
-        begin
-             ImageListMic.GetIcon(1, TrayIcon2.Icon);
-        end;
-     //ImageListCam.GetIcon(0, TrayIcon1.Icon);
-     //ImageListMic.GetIcon(0, TrayIcon2.Icon);
-     //ShowMessage('Press Ok');
-     //ImageListCam.GetIcon(1, TrayIcon1.Icon);
-     //ImageListMic.GetIcon(1, TrayIcon2.Icon);
-     //GetImageList.GetIcon(ImageIndex, TrayIcon1.Icon);
-end;
-
-procedure TForm1.MenuItem10Click(Sender: TObject);   // Exit
-begin
-     ImageListCam.Free;
-     ImageListMic.Free;
-     PopupMenu1.Free;
-     TrayIcon1.Free;
-     TrayIcon2.Free;
-     Halt (0);
-end;
-
-procedure TForm1.MenuItem2Click(Sender: TObject);
-begin
-     HasPassword := false;
-     ShowMessage('Passsword, has been reset');
+    ImgList.Assign(TempImgList);
+  finally
+    TempImgList.Free;
+    TempBmp1.Free;
+    TempBmp2.Free;
+  end;
 end;
 
 procedure CameraOn;
@@ -204,78 +124,109 @@ begin
     HasPassword := True;
 end;
 
-procedure TForm1.MenuItem3Click(Sender: TObject);   // Camera On
+procedure TForm1.FormCreate(Sender: TObject);
 begin
-     if HasPassword then
+    S                           := fpsystem('echo off');
+    ImageList1.Width            := 64;
+    ImageList1.Height           := 64;
+    ImageList1.Scaled           := true;
+    //ImageList2.Width            := 64;
+    //ImageList2.Height           := 64;
+    //ImageList2.Scaled           := true;
+
+    HasPassword                 := false;
+    application.showmainform    := false;
+    TrayIcon1.Hint              := 'Camera Switcher';
+
+    if DirectoryExists('/dev/v4l/') then
+       begin
+            ImageList1.GetIcon(0, TrayIcon1.Icon);
+            ShowMessage('Camera is On');
+       end
+    else
+       begin
+            ImageList1.GetIcon(1, TrayIcon1.Icon);
+            ShowMessage('Camera is Off');
+       end;
+    TrayIcon1.ShowIcon          := True;
+    TrayIcon1.Show;
+end;
+
+procedure TForm1.MenuItem1Click(Sender: TObject);
+begin
+    if HasPassword then
        begin
            CameraOn;
-           ImageListCam.GetIcon(0, TrayIcon1.Icon);
+           ImageList1.GetIcon(0, TrayIcon1.Icon);
        end
     else
         begin
           AskPassword;
           CameraOn;
           if HasPassword then
-             ImageListCam.GetIcon(0, TrayIcon1.Icon);
+             ImageList1.GetIcon(0, TrayIcon1.Icon);
         end;
 end;
 
-procedure TForm1.MenuItem4Click(Sender: TObject);   // Camera Off
+procedure TForm1.MenuItem2Click(Sender: TObject);
 begin
-     if HasPassword then
+    if HasPassword then
        begin
            CameraOff;
-           ImageListCam.GetIcon(1, TrayIcon1.Icon);
+           ImageList1.GetIcon(1, TrayIcon1.Icon);
        end
     else
         begin
           AskPassword;
           CameraOff;
           if HasPassword then
-             ImageListCam.GetIcon(1, TrayIcon1.Icon);
+             ImageList1.GetIcon(1, TrayIcon1.Icon);
         end;
 end;
 
-procedure TForm1.MenuItem6Click(Sender: TObject);   // Microphone Mute
+procedure TForm1.MenuItem3Click(Sender: TObject);
 begin
-     S := fpsystem('amixer set Capture nocap');
-     //ShowMessage('Microphone has been mutted');
-     ImageListMic.GetIcon(1, TrayIcon2.Icon);
+    TrayIcon1.Hide;
+    PopupMenu1.Free;
+    TrayIcon1.Free;
+    Halt (0);
 end;
 
-procedure TForm1.MenuItem7Click(Sender: TObject);  // Microphone Unmute
+procedure TForm1.MenuItem4Click(Sender: TObject);
+begin
+    HasPassword := false;
+    ShowMessage('Password has been forgotten');
+end;
+
+procedure TForm1.MenuItem5Click(Sender: TObject);
+
+begin
+    FormAbout.Label1.Caption:='Project';
+    FormAbout.Label2.Caption:='Developer';
+    FormAbout.Label3.Caption:='Licence';
+    FormAbout.ListBox1.Items.Clear;
+    FormAbout.ListBox1.Items.Add('Camera Control On/Off Switch for Linux is an');
+    FormAbout.ListBox1.Items.Add('LGPL2 Free Pascal Project with LCL components,');
+    FormAbout.ListBox1.Items.Add('completely developed from scratch, at 23th, of');
+    FormAbout.ListBox1.Items.Add('January 2020 by Linuxer パスカリス スポシト');
+    FormAbout.Show;
+end;
+
+procedure TForm1.MenuItem6Click(Sender: TObject);
 begin
      S := fpsystem('amixer set Capture cap');
-     //ShowMessage('Microphone has been mutted');
-     ImageListMic.GetIcon(0, TrayIcon2.Icon);
+     ShowMessage('Microphone has been unmutted');
 end;
 
-procedure TForm1.MenuItem9Click(Sender: TObject);
+procedure TForm1.MenuItem7Click(Sender: TObject);
 begin
-     About.Form2.Label1.Caption:='Developer';
-     About.Form2.Label2.Caption:='Licence';
-     About.Form2.Label3.Caption:='Project';
-     About.Form2.ListBox1.Items.Clear;
-     About.Form2.ListBox1.Items.Add('Camera & Microphone Control Switches for Linux is');
-     About.Form2.ListBox1.Items.Add('an LGPL2 Free Pascal Project with LCL components,');
-     About.Form2.ListBox1.Items.Add('completely developed from scratch, at 23th, of');
-     About.Form2.ListBox1.Items.Add('January 2020 by Linuxer パスカリス スポシト');
-     About.Form2.ListBox1.Items.Add('Redesigned and further Developed at 28th of January');
-     About.Form2.ListBox1.Items.Add('2020, by Linuxer (https://gitlab.com/psposito), to ');
-     About.Form2.ListBox1.Items.Add('provide Camera and Mic status alone with On/Off and');
-     About.Form2.ListBox1.Items.Add('Mute/Unmute fuctions');
-     About.Form2.Show;
+    S := fpsystem('amixer set Capture nocap');
+    ShowMessage('Microphone has been mutted');
 end;
 
 procedure TForm1.TrayIcon1Click(Sender: TObject);
 begin
-     PopUpMenu1.PopUp;
-end;
-
-procedure TForm1.TrayIcon2Click(Sender: TObject);
-begin
-     PopUpMenu1.PopUp;
+    PopupMenu1.PopUp;
 end;
 
 end.
-
