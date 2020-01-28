@@ -58,6 +58,16 @@ Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is 
 - Redesigned and further Developed at 28th of January 2020, in order to provide Camera and Mic status alone with On/Off and Mute/Unmute fuctions     
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# [Why on Free (Object) Pascal?](https://dubst3pp4.github.io/post/2017-10-03-why-i-use-object-pascal/)
+# [Why on Free (Object) Pascal](https://dubst3pp4.github.io/post/2017-10-03-why-i-use-object-pascal/) and not Python3 or any other?
 
+# Some of my reasons are:
 
+- Nice memory footprint... 29.4 MB with much more Graphical User Interface (two icon trays, one About Form and one Main Form), versus 23.2 MB of Camera Monitor (no Graphical User Interface)
+
+    ![Screenshot](https://imgur.com/yZi5PI9.png)
+    
+- Faster startup, menus, etc. 
+- Robust tested Programming Language, over 30 years of Development
+- Nice Gui touch (Contemporary Looking Components)
+- Very big support community, fast responding
+- Others
