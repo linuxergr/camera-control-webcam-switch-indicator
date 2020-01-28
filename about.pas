@@ -4,6 +4,10 @@ unit About;
 {$warnings off}
 {$hints off}
 
+// Created at 23th of January 2020, by Linuxer (https://gitlab.com/psposito), from scratch with Free Pascal
+// Redesigned and further Developed at 28th of January 2020, by Linuxer (https://gitlab.com/psposito)
+// to provide Camera and Mic status alone with On/Off and Mute/Unmute fuctions
+
 interface
 
 uses
