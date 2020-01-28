@@ -66,7 +66,7 @@ Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is 
 
 - Nice memory footprint... 29.4 MB with much more Graphical User Interface (two icon trays, one About Form and one Main Form), versus 23.2 MB of Camera Monitor Python3 (one trayicon, no Graphical User Interface)
 
-    ![Screenshot](https://imgur.com/yZi5PI9.png)
+    ![Screenshot](https://imgur.com/A7rIahz.png)
     
 - Faster startup, menus, etc. 
 - Robust tested Programming Language, over 30 years of Development
