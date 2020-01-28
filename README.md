@@ -60,7 +60,9 @@ Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Why on Free (Object) Pascal](https://dubst3pp4.github.io/post/2017-10-03-why-i-use-object-pascal/) and not Python3 or any other?
 
-# Some of my reasons are:
+## Some of my reasons are:
+
+- Easier code mainenance, really important in the log term
 
 - Nice memory footprint... 29.4 MB with much more Graphical User Interface (two icon trays, one About Form and one Main Form), versus 23.2 MB of Camera Monitor Python3 (one trayicon, no Graphical User Interface)
 
