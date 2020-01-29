@@ -60,7 +60,7 @@ Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Why on Free (Object) Pascal](https://dubst3pp4.github.io/post/2017-10-03-why-i-use-object-pascal/) and not Python3 or any other?
 
-## Some of my reasons are:
+## Some of the reasons are:
 
 - Easier code mainenance, really important in the log term
 
