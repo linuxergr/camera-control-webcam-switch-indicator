@@ -12,7 +12,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  Menus, UTF8Process, Unix, process, About;
+  Menus, UTF8Process, VpClock, Unix, process, About;
 
 type
 
@@ -39,6 +39,7 @@ type
     ProcessUTF8_1      : TProcessUTF8;
     TrayIcon1          : TTrayIcon;
     TrayIcon2          : TTrayIcon;
+    VpClock1           : TVpClock;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -51,6 +52,7 @@ type
     procedure MenuItem9Click(Sender: TObject);
     procedure TrayIcon1Click(Sender: TObject);
     procedure TrayIcon2Click(Sender: TObject);
+    procedure VpClock1SecondChange(Sender: TObject);
   private
     CamImageIndex    : integer;
     MicImageIndex    : integer;
@@ -69,7 +71,7 @@ var
 
 implementation
 
-{$R *.lfm}
+{$R *.frm}
 
 { TForm1 }
 
@@ -131,6 +133,8 @@ begin
      HasPassword                 := false;
      CamImageIndex               := 0;
      MicImageIndex               := 0;
+
+     VpClock1.Active             := true;
 
      GetMicCaptureStatus;
 
@@ -277,5 +281,30 @@ begin
      PopUpMenu1.PopUp;
 end;
 
-end.
+procedure TForm1.VpClock1SecondChange(Sender: TObject);
+begin
+     GetMicCaptureStatus;
 
+     if DirectoryExists('/dev/v4l/') then
+        begin
+             ImageListCam.GetIcon(0, TrayIcon1.Icon);
+             //ShowMessage('Camera is On');
+        end
+     else
+        begin
+             ImageListCam.GetIcon(1, TrayIcon1.Icon);
+             //ShowMessage('Camera is Off');
+        end;
+
+     if isMicOn = true then
+        begin
+             ImageListMic.GetIcon(0, TrayIcon2.Icon);
+        end;
+
+     if isMicOn = false then
+        begin
+             ImageListMic.GetIcon(1, TrayIcon2.Icon);
+        end;
+end;
+
+end.
