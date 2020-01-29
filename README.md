@@ -74,3 +74,9 @@ Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is 
 - Nice Gui touch (Contemporary Looking Components)
 - Very big support community, fast responding
 - Others
+
+# Video
+
+[![](http://img.youtube.com/vi/pUuoOgVzXNU/0.jpg)](http://www.youtube.com/watch?v=pUuoOgVzXNU "Camera Control Video")
+
+[](https://youtu.be/pUuoOgVzXNU)
