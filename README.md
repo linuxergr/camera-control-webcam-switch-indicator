@@ -55,7 +55,8 @@ Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is 
 # Project History
 
 - Created at 23th of January 2020, from scratch with Free Pascal
-- Redesigned and further Developed at 28th of January 2020, in order to provide Camera and Mic status alone with On/Off and Mute/Unmute fuctions     
+- Redesigned and further Developed at 28th of January 2020, in order to provide Camera and Mic status alone with On/Off and Mute/Unmute fuctions   
+- Added feeling of Malware or unwanted functions, i.e. if Camera switches On, when is Off, the tray icon will change state accordingly. Tha same is valid for the microphone mute/unmute
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Why on Free (Object) Pascal](https://dubst3pp4.github.io/post/2017-10-03-why-i-use-object-pascal/) and not Python3 or any other?
