@@ -2,13 +2,13 @@
 
 A small utility to switch your webcam on/off, microphone mute/unmute for Linux Desktops (Gtk)
 
-This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)), for having the full webcam status on tray and provides microphone functions aditionally.
+This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)), for having the full webcam status on tray and provides for both camera and microphone switch functions aditionally.
 
-Please note that sudo password must be providen, otherwise it will not work.
+#### Please note that sudo password must be providen, otherwise it will not work.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Background:
+## Background:
 
 - Camera monitor indicates the status of the camera, but it not enough to control the on/off status.
 - Microphone mute/unmute status, has no visual indicator and is difficult to remember the switch position in the Volume Icon.
@@ -19,13 +19,13 @@ Background:
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Solution:
+## Solution:
 
 - Provide an additional, or standalone, webcam & microphone switch which loads and unloads the uvc driver, in order to be on the safe side, as much as possible.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is the Camera Control tray icon) :
+# Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is the Camera Control tray icon) :
 
 - Camera on, Microphone Unmuted:
 
@@ -54,7 +54,7 @@ Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Project History
 
-- Created at 23th of January 2020, from scratch with Free Pascal
+- Created at 23th of January 2020, from scratch with Free Pascal, please ref. to the below, why
 - Redesigned and further Developed at 28th of January 2020, in order to provide Camera and Mic status alone with On/Off and Mute/Unmute fuctions   
 - Added feeling of Malware or unwanted functions, i.e. if Camera switches On, when is Off, the tray icon will change state accordingly. Tha same is valid for the microphone mute/unmute
 
@@ -63,7 +63,7 @@ Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is 
 
 ## Some of the main reasons are:
 
-- Easier code mainenance, really important in the long term
+- Easier code maintenance, really important in the long term
 
 - Nice memory footprint... 29.4 MB with much more Graphical User Interface (two icon trays, one About Form and one Main Form), versus 23.2 MB of Camera Monitor Python3 (one trayicon, no Graphical User Interface). For Desktop PCs is not a big deal, but Linux does not run only on Desktops PCs.
 
@@ -75,6 +75,7 @@ Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is 
 - Very big support community, fast responding
 - Others
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Video
 
 [![Camera Control](http://img.youtube.com/vi/pUuoOgVzXNU/0.jpg)](http://www.youtube.com/watch?v=pUuoOgVzXNU "Camera Control Video")
