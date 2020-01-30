@@ -80,5 +80,5 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 [![Camera Control](http://img.youtube.com/vi/pUuoOgVzXNU/0.jpg)](http://www.youtube.com/watch?v=pUuoOgVzXNU "Camera Control Video")
 
-###[](https://youtu.be/pUuoOgVzXNU)
+### https://youtu.be/pUuoOgVzXNU
 
