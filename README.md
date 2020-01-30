@@ -76,7 +76,7 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 - Others
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Video
+# Video Demo (please click on it, to open on Youtube)
 
 [![Camera Control](http://img.youtube.com/vi/pUuoOgVzXNU/0.jpg)](http://www.youtube.com/watch?v=pUuoOgVzXNU "Camera Control Video")
 
