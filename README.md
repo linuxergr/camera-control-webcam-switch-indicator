@@ -92,4 +92,4 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 #### is neccessary to be installed, for proper appearance of icons, menus e.t.c.
 
-###### (*) Select by the name of your Distribution (either major or derived from, accordingly.
+###### (*) Select the name from the list, by the name of your Distribution (either major or derived from), accordingly.
