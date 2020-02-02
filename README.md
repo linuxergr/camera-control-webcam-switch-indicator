@@ -25,11 +25,11 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 ## News - 2nd of Feb, 2020, final Development Stage for Release:
 
-- ### Closed Project's Target Issue [#1](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/1) (External Events (hacking) Warnings and Logs
+- ### Closed Project's Target Issue [#1](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/1), External Events (hacking) Warnings and Logs, please open for further details
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is the Camera Control tray icon) :
+# Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is the Camera Control tray icon):
 
 - Camera on, Microphone Unmuted:
 
