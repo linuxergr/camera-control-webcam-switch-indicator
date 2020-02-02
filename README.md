@@ -23,6 +23,10 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 - Provide an additional, or standalone, webcam & microphone switch which loads and unloads the uvc driver, in order to be on the safe side, as much as possible.
 
+## News - 2nd of Feb, 2020, final Development Stage for Release:
+
+- ### Closed Project's Target Issue [#1](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/1) (External Events (hacking) Warnings and Logs
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is the Camera Control tray icon) :
