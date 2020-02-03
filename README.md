@@ -25,7 +25,7 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 ## News - 2nd of Feb, 2020, final Development Stage for Release:
 
-- ### Closed Project's Target Issue [#1](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/1), External Events (hacking) Warnings and Logs, please open for further details
+- ### Closed Project's Target Issue [#1](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/1), External Events (hacking) Warnings and Logs, please read it for further details
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -79,7 +79,7 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 - Very big support community, fast responding
 - Others
 
-## GitLab bug, shows PKGBUILD as Visual Basic part, which is wrong
+## GitLab bug, shows PKGBUILD as Visual Basic part, which is incorrect
 
 -   ![Screenshot](https://imgur.com/hb9FcKJ.png)
     
