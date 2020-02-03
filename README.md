@@ -79,10 +79,15 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 - Very big support community, fast responding
 - Others
 
+## GitLab bug, shows PKGBUILD as Visual Basic part, which is wrong
+
+-   ![Screenshot](https://imgur.com/hb9FcKJ.png)
+    
+    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Video Demo (click on it, or click on the link below, to open the Youtube page)
 
-[![Camera Control](http://img.youtube.com/vi/pUuoOgVzXNU/0.jpg)](http://www.youtube.com/watch?v=pUuoOgVzXNU "Camera Control Video")
+-   [![Camera Control](http://img.youtube.com/vi/pUuoOgVzXNU/0.jpg)](http://www.youtube.com/watch?v=pUuoOgVzXNU "Camera Control Video")
 
 ### https://youtu.be/pUuoOgVzXNU
 
