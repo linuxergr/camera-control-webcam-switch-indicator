@@ -4,7 +4,7 @@ A small utility to switch your webcam on/off, microphone mute/unmute for Linux D
 
 This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)), for having the full webcam status on tray and provides for both camera and microphone switch functions aditionally.
 
-#### Please note that sudo password must be providen, otherwise it will not work.
+#### Please note that sudo password must be providen, otherwise it will not work. 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
