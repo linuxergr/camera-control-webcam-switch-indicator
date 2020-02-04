@@ -101,7 +101,7 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 ###         https://youtu.be/MiGO4id309g 
 
--   [![](http://img.youtube.com/vi/1B0s8MFfnTg/0.jpg)](http://www.youtube.com/watch?v=1B0s8MFfnTg "CameraControlQt5") (Qt5 Version) [Qt5 Stage of Development](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/4)
+-   [![](http://img.youtube.com/vi/1B0s8MFfnTg/0.jpg)](http://www.youtube.com/watch?v=1B0s8MFfnTg "CameraControlQt5") [(Qt5 Stage of Development)](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/4)
 
 ###         https://youtu.be/1B0s8MFfnTg
 
