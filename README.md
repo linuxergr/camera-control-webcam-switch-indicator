@@ -17,7 +17,7 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
     ![Screenshot](https://imgur.com/MmQeg2Y.png)
 
-- v4l2-ctl does not provide a direct way to switch Camera, either On, nor Off 
+- v4l2-ctl does not provide a direct way to switch Camera, either On, or Off 
 
     ![Screenshot](https://imgur.com/wF4RCu5.png)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
