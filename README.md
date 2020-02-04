@@ -1,6 +1,6 @@
 # Camera & Microphone Control Switches for Linux on Tray
 
-A small utility to switch your webcam on/off, microphone mute/unmute for Linux Desktops (Gtk)
+A small utility to switch your webcam on/off, microphone mute/unmute for Linux Desktops (Gtk2, Gtk3 in the future)
 
 This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)), for having the full webcam status on tray and provides for both camera and microphone switch functions aditionally.
 
@@ -17,6 +17,9 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
     ![Screenshot](https://imgur.com/MmQeg2Y.png)
 
+- v4l2-ctl does not provide a direct way to switch Camera, either On, nor Off 
+
+    ![Screenshot](https://imgur.com/wF4RCu5.png)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Solution:
@@ -41,7 +44,7 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 - Switch Microphone to Mute:
     
-    ![Schreenshot](https://imgur.com/arNUBSa.png)
+    ![Screenshot](https://imgur.com/arNUBSa.png)
 
 - Camera Off, Microphone Muted:
 
