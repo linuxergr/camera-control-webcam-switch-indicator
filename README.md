@@ -32,7 +32,8 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Screenshots (Leftside of images is the Camera Monitor tray icon / Right side is the Camera Control tray icon):
+# Screenshots: 
+### (Leftside of images is the Camera Monitor tray icon / Right side is the Camera Control tray icon):
 
 - Camera on, Microphone Unmuted:
 
@@ -59,7 +60,7 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
     ![Screenshot](https://imgur.com/XB9hrBY.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Project History
+# Project History:
 
 - Created at 23th of January 2020, from scratch with Free Pascal, please ref. to the below, why
 - Redesigned and further Developed at 28th of January 2020, in order to provide Camera and Mic status alone with On/Off and Mute/Unmute fuctions   
@@ -88,7 +89,9 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
     
     
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Video Demo (click on it, or click on the link below, to open the Youtube page)
+# Video Demos: 
+
+### (click on them, or click on the links below them, to open the Youtube page)
 
 -   [![Camera Control](http://img.youtube.com/vi/pUuoOgVzXNU/0.jpg)](http://www.youtube.com/watch?v=pUuoOgVzXNU "Camera Control Video") (1st Stage of Development)
 
