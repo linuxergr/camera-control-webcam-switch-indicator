@@ -17,14 +17,14 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
     ![Screenshot](https://imgur.com/MmQeg2Y.png)
 
-- v4l2-ctl does not provide a direct way to switch Camera, either On, or Off 
+- ##### v4l2-ctl does not provide a direct way to switch Camera, either On, or Off [Important!, ref to the Solution]
 
     ![Screenshot](https://imgur.com/wF4RCu5.png)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Solution:
+## Solution (Why so?):
 
-- Provide an additional, or standalone, webcam & microphone switch which loads and unloads the uvc driver, in order to be on the safe side, as much as possible.
+- #### Provide an additional, or standalone, webcam & microphone switch which loads and unloads the uvc driver, in order to be on the safe side, as much as possible.
 
 ## News - 2nd of Feb, 2020, final Development Stage for Release:
 
