@@ -90,9 +90,13 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Video Demo (click on it, or click on the link below, to open the Youtube page)
 
--   [![Camera Control](http://img.youtube.com/vi/pUuoOgVzXNU/0.jpg)](http://www.youtube.com/watch?v=pUuoOgVzXNU "Camera Control Video")
+-   [![Camera Control](http://img.youtube.com/vi/pUuoOgVzXNU/0.jpg)](http://www.youtube.com/watch?v=pUuoOgVzXNU "Camera Control Video") (1st Stage of Development)
 
-### https://youtu.be/pUuoOgVzXNU
+###         https://youtu.be/pUuoOgVzXNU 
+
+-   [![](http://img.youtube.com/vi/MiGO4id309g/0.jpg)](http://www.youtube.com/watch?v=MiGO4id309g "Camera and Microphone Control for Linux 2") (2nd Stage of Development)
+
+###         https://youtu.be/MiGO4id309g 
 
 # Notes
 
