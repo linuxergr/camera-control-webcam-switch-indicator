@@ -1,6 +1,6 @@
 # Camera & Microphone Control Switches for Linux on Tray
 
-A small utility to switch your webcam on/off, microphone mute/unmute for Linux Desktops (Gtk2, Gtk3 in the future)
+A small utility to switch your webcam on/off, microphone mute/unmute for Linux Desktops (Gtk2, :τ5, Gtk3 maybe in the future)
 
 This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)), for having the full webcam status on tray and provides for both camera and microphone switch functions aditionally.
 
