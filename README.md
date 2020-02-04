@@ -33,15 +33,19 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Screenshots: 
-### (Leftside of images is the Camera Monitor tray icon / Right side is the Camera Control tray icon):
+### (Leftside of images is the Camera / Microphone Shield status tray icon / Right side is the Camera Control tray icon):
 
 - Camera on, Microphone Unmuted:
 
-    ![Screenshot](https://imgur.com/5nRqTUQ.png)    
+    ![Screenshot](https://imgur.com/I8S4mJF.png)    
 
 - Switch Camera to Off:
     
-    ![Screenshot](https://imgur.com/JfVuGQY.png)  
+    ![Screenshot](https://imgur.com/JfVuGQY.png) 
+
+- Camera Off:
+
+    ![Screenshot](https://imgur.com/YObzn0e.png)
 
 - Switch Microphone to Mute:
     
@@ -49,11 +53,27 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 - Camera Off, Microphone Muted:
 
-    ![Screenshot](https://imgur.com/tZxSLUD.png)
+    ![Screenshot](https://imgur.com/c4OU1SX.png)
 
 - Sudo password input, normally entered once per application session, or if Password Reset has been executed:
     
-    ![Screenshot](https://imgur.com/kJgWbmI.png)    
+    ![Screenshot](https://imgur.com/kJgWbmI.png)   
+
+- Shield event (for both microphone and camera):
+    
+    ![Screenshot](https://imgur.com/wbHBcjG.png)
+
+- Shield event status:
+
+    ![Screenshot](https://imgur.com/EDK0Liu.png)
+    
+- Events Log menu:
+    
+    ![Screenshot](https://imgur.com/9KKZa2u.png)
+
+- external Events Log List:
+    
+    ![Screenshot](https://imgur.com/5f5K4d8.png)
 
 - About: 
 
