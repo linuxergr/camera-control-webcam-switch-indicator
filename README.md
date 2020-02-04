@@ -17,7 +17,7 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
     ![Screenshot](https://imgur.com/MmQeg2Y.png)
 
-- ##### v4l2-ctl does not provide a direct way to switch Camera, either On, or Off [Important!, ref to the Solution]
+- ##### v4l2-ctl does not provide a direct way to switch Camera, either On, or Off [Important!, ref to the [Solution](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/-/blob/master/README.md#solution-why-so)] section below
 
     ![Screenshot](https://imgur.com/wF4RCu5.png)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
