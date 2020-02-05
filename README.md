@@ -32,7 +32,7 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 - ### 2nd of Feb, 2020, final Development Stage for Release, Closed Project's Target Issue [#1](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/1), External Events (hacking) Warnings and Logs, please read it for further details
 - ### 4th of Feb,2020, Closed milestone [#4](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/4) 
-- ### 5th of Feb, 2020, new [Release 1.1](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/-/tags/1.1), was created and considering around the next step, to add Permanent Actions Menu Otions: 
+- ### 5th of Feb, 2020, new [Release 1.1](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/-/tags/1.1), was created and considering around the next step, to add Permanent Actions Menu Options: 
 
     ![Screenshot](https://imgur.com/vw6zPPM.png)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
