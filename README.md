@@ -28,10 +28,11 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 - #### It is clearly for Desktop usage only.
 - #### Nobody forces you to use it, if you do not want it. Linux is freedom of choices.
 
-## News - 2nd of Feb, 2020, final Development Stage for Release:
+## News:
 
-- ### Closed Project's Target Issue [#1](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/1), External Events (hacking) Warnings and Logs, please read it for further details
-
+- ### 2nd of Feb, 2020, final Development Stage for Release, Closed Project's Target Issue [#1](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/1), External Events (hacking) Warnings and Logs, please read it for further details
+- ### 4th of Feb,2020, Closed milestone [#4](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/4) and new [Release 1.1](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/-/tags/1.1), was created at 5th of Feb, 2020
+- ### Thinking around the next step. To add [Permanent Actions Menu](https://imgur.com/vw6zPPM.png), 5th of Feb, 2020
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Screenshots: 
