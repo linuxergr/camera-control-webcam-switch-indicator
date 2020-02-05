@@ -26,6 +26,7 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 - #### Provide an additional, or standalone, webcam & microphone switch which loads and unloads the uvc driver, in order to be on the safe side, as much as possible, instead of doing [this](https://linoxide.com/linux-how-to/disable-webcam-microphone-linux/), avoiding the User to be forced to reboot everytime the camera has to go on for capture or to go off and lock it. (the reason of this application was created)
 - #### It is clearly for Desktop usage only.
+- #### Nobody forces you to use it, if you do not want it. Linux is freedom of choices.
 
 ## News - 2nd of Feb, 2020, final Development Stage for Release:
 
