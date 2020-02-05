@@ -127,10 +127,16 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 # Notes
 
-#### For Desktops not based on Gtk, but on Qt i.e. KDE, LxQt etc, it is neccessary to be installed, for proper appearance of icons, menus e.t.c., the following package: 
+#### For Desktops not based on Gtk, but on Qt i.e. KDE, LxQt etc, it may be neccessary to be installed, for proper appearance of icons, menus e.t.c., the following package: 
 
 - ##### qt5gtk2 (Arch), 
 - ##### qt5-gtk-platformtheme (Debian/Ubuntu),
 - ##### libqt5-qtstyleplugins-platformtheme-gtk2 (OpenSuSe) 
 
-#### Select the name from the above list, by the name of your Distribution (either major or derived from), accordingly.
+#### For Desktops not based on Qt, but on GTK i.e. Gnome, LxDE, XFCE etc, it may be neccessary to be installed, for proper appearance of icons, menus e.t.c., the following packages: 
+
+- ##### qt5ct (All Distributions)
+- ##### qt5-style-plugins (All Distributions)
+
+
+#### Select the name(s) from the above list, by the name of your Distribution (either major or derived from), respectively.
