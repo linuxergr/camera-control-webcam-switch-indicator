@@ -14,7 +14,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  TplLabelUnit;
+  TplLabelUnit, LCLIntf;
 
 type
 
@@ -33,6 +33,9 @@ type
     plURLLabel3        : TplURLLabel;
     procedure Button2Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure plURLLabel1Click(Sender: TObject);
+    procedure plURLLabel2Click(Sender: TObject);
+    procedure plURLLabel3Click(Sender: TObject);
   private
 
   public
@@ -56,6 +59,21 @@ end;
 procedure TForm2.FormCreate(Sender: TObject);
 begin
 
+end;
+
+procedure TForm2.plURLLabel1Click(Sender: TObject);
+begin
+     OpenUrl('https://gitlab.com/psposito/camera-control-webcam-switch-indicator');
+end;
+
+procedure TForm2.plURLLabel2Click(Sender: TObject);
+begin
+     OpenUrl('http://bit.do/linuxer');
+end;
+
+procedure TForm2.plURLLabel3Click(Sender: TObject);
+begin
+     OpenUrl('https://wiki.freepascal.org/FPC_modified_LGPL');
 end;
 
 end.
