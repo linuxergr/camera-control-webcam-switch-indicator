@@ -123,9 +123,13 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
     ![Screenshot](https://imgur.com/A7rIahz.png)
     
-- Latest Development memory footprint with all Menus, Forms and Icons, 65.9 MB (Really good):
+- Latest Development memory footprint with all Menus, Forms and Icons, 78.4 + 2.9 = 80.9 MB (Really good):
 
-    ![Screenshot](https://imgur.com/G6Of1vS.png)
+    ![Screenshot](https://imgur.com/UILkR7y.png)
+    
+    ![Screenshot](https://imgur.com/JXkZytA.png)
+    
+    
     
 - Faster startup, menus, etc. 
 - Robust tested Programming Language, over 30 years of Development
@@ -137,7 +141,7 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 -   ![Screenshot](https://imgur.com/hb9FcKJ.png)
     
-    
+ 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Video Demos: 
 
