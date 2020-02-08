@@ -151,7 +151,7 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 ###         https://youtu.be/1B0s8MFfnTg
 
-### Latest Video isbeing prepared. Stay tuned...
+### Latest Video is being prepared. Stay tuned...
 
 # Notes
 
