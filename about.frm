@@ -9,7 +9,7 @@ object Form2: TForm2
   DesignTimePPI = 150
   OnCreate = FormCreate
   Position = poScreenCenter
-  LCLVersion = '2.1.0.0'
+  LCLVersion = '7.0'
   object Image1: TImage
     Left = 8
     Height = 265
@@ -9661,7 +9661,7 @@ object Form2: TForm2
     TopIndex = -1
   end
   object Label1: TLabel
-    Left = 436
+    Left = 360
     Height = 26
     Top = 376
     Width = 70
@@ -9670,7 +9670,7 @@ object Form2: TForm2
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 436
+    Left = 360
     Height = 26
     Top = 417
     Width = 70
@@ -9680,27 +9680,29 @@ object Form2: TForm2
   end
   object plURLLabel2: TplURLLabel
     Cursor = crHandPoint
-    Left = 552
+    Left = 480
     Height = 26
     Top = 376
     Width = 186
     Caption = 'http://bit.do/linuxer'
     Font.Color = clBlue
-    Font.Style = [fsUnderline]
+    Font.Style = [fsItalic, fsUnderline]
     ParentColor = False
     ParentFont = False
+    OnClick = plURLLabel2Click
   end
   object plURLLabel3: TplURLLabel
     Cursor = crHandPoint
-    Left = 552
+    Left = 480
     Height = 26
-    Top = 458
+    Top = 464
     Width = 481
     Caption = 'https://wiki.freepascal.org/FPC_modified_LGPL'
     Font.Color = clBlue
-    Font.Style = [fsUnderline]
+    Font.Style = [fsItalic, fsUnderline]
     ParentColor = False
     ParentFont = False
+    OnClick = plURLLabel3Click
   end
   object Button2: TButton
     Left = 0
@@ -9713,7 +9715,7 @@ object Form2: TForm2
     TabOrder = 1
   end
   object Label3: TLabel
-    Left = 436
+    Left = 360
     Height = 26
     Top = 458
     Width = 70
@@ -9723,14 +9725,15 @@ object Form2: TForm2
   end
   object plURLLabel1: TplURLLabel
     Cursor = crHandPoint
-    Left = 552
+    Left = 480
     Height = 26
-    Top = 417
+    Top = 420
     Width = 682
     Caption = 'https://gitlab.com/psposito/camera-control-webcam-switch-indicator'
     Font.Color = clBlue
-    Font.Style = [fsUnderline]
+    Font.Style = [fsItalic, fsUnderline]
     ParentColor = False
     ParentFont = False
+    OnClick = plURLLabel1Click
   end
 end
