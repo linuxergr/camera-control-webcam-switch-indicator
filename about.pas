@@ -5,8 +5,10 @@ unit About;
 {$hints off}
 
 // Created at 23th of January 2020, by Linuxer (https://gitlab.com/psposito), from scratch with Free Pascal
-// Redesigned and further Developed at 28th of January 2020, by Linuxer (https://gitlab.com/psposito)
+// Redesigned and further Developed at 28th of January 2020, by Initial developer
 // to provide Camera and Mic status alone with On/Off and Mute/Unmute fuctions
+// Developed further for intrusion feeling and logging at 2nd of February 2020, by Initial developer
+// Developed for Blacklisting/Whitelisting functions for both camera & audio at 7th of February 2020, by Initial developer
 
 interface
 
@@ -19,18 +21,18 @@ type
   { TForm2 }
 
   TForm2 = class(TForm)
-    Button1: TButton;
-    Button2: TButton;
-    Image1: TImage;
-    Image2: TImage;
-    Label1: TLabel;
-    Label2: TLabel;
-    Label3: TLabel;
-    ListBox1: TListBox;
-    plURLLabel1: TplURLLabel;
-    plURLLabel2: TplURLLabel;
-    plURLLabel3: TplURLLabel;
+    Button2            : TButton;
+    Image1             : TImage;
+    Image2             : TImage;
+    Label1             : TLabel;
+    Label2             : TLabel;
+    Label3             : TLabel;
+    ListBox1           : TListBox;
+    plURLLabel1        : TplURLLabel;
+    plURLLabel2        : TplURLLabel;
+    plURLLabel3        : TplURLLabel;
     procedure Button2Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
 
   public
@@ -42,7 +44,7 @@ var
 
 implementation
 
-{$R *.lfm}
+{$R *.frm}
 
 { TForm2 }
 
@@ -51,5 +53,9 @@ begin
      Form2.Close;
 end;
 
-end.
+procedure TForm2.FormCreate(Sender: TObject);
+begin
 
+end;
+
+end.

@@ -1,13 +1,13 @@
 object Form3: TForm3
   Left = 468
-  Height = 504
+  Height = 508
   Top = 45
-  Width = 676
-  Caption = 'Events Logged'
-  ClientHeight = 504
-  ClientWidth = 676
+  Width = 681
+  Caption = 'External Events Logged'
+  ClientHeight = 508
+  ClientWidth = 681
   DesignTimePPI = 150
-  LCLVersion = '7.0'
+  LCLVersion = '2.1.0.0'
   object Button1: TButton
     Left = 0
     Height = 48
@@ -21,16 +21,17 @@ object Form3: TForm3
     Left = 2
     Height = 400
     Top = 48
-    Width = 671
+    Width = 678
+    Color = clDefault
+    ColCount = 2
     ParentFont = False
+    RowCount = 11
     ScrollBars = ssAutoVertical
     TabOrder = 1
+    TitleImageList = Form1.ImageListStatus
     ColWidths = (
       273
       441
-      100
-      100
-      100
     )
     Cells = (
       2

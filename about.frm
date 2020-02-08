@@ -1,14 +1,15 @@
 object Form2: TForm2
   Left = 2120
-  Height = 481
+  Height = 548
   Top = 688
-  Width = 1170
+  Width = 1246
   Caption = 'About'
-  ClientHeight = 481
-  ClientWidth = 1170
+  ClientHeight = 548
+  ClientWidth = 1246
   DesignTimePPI = 150
+  OnCreate = FormCreate
   Position = poScreenCenter
-  LCLVersion = '7.0'
+  LCLVersion = '2.1.0.0'
   object Image1: TImage
     Left = 8
     Height = 265
@@ -7675,8 +7676,8 @@ object Form2: TForm2
   end
   object Image2: TImage
     Left = 0
-    Height = 182
-    Top = 281
+    Height = 178
+    Top = 320
     Width = 348
     Picture.Data = {
       0A544A706567496D616765CCF50000FFD8FFE000104A46494600010101004800
@@ -9650,28 +9651,28 @@ object Form2: TForm2
   end
   object ListBox1: TListBox
     Left = 480
-    Height = 273
+    Height = 360
     Top = 8
-    Width = 670
+    Width = 754
     ItemHeight = 0
     ParentFont = False
-    ScrollWidth = 668
+    ScrollWidth = 752
     TabOrder = 0
     TopIndex = -1
   end
   object Label1: TLabel
-    Left = 364
+    Left = 436
     Height = 26
-    Top = 290
+    Top = 376
     Width = 70
     Caption = 'Label1'
     ParentColor = False
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 364
+    Left = 436
     Height = 26
-    Top = 330
+    Top = 417
     Width = 70
     Caption = 'Label2'
     ParentColor = False
@@ -9679,9 +9680,9 @@ object Form2: TForm2
   end
   object plURLLabel2: TplURLLabel
     Cursor = crHandPoint
-    Left = 480
+    Left = 552
     Height = 26
-    Top = 290
+    Top = 376
     Width = 186
     Caption = 'http://bit.do/linuxer'
     Font.Color = clBlue
@@ -9691,9 +9692,9 @@ object Form2: TForm2
   end
   object plURLLabel3: TplURLLabel
     Cursor = crHandPoint
-    Left = 480
+    Left = 552
     Height = 26
-    Top = 372
+    Top = 458
     Width = 481
     Caption = 'https://wiki.freepascal.org/FPC_modified_LGPL'
     Font.Color = clBlue
@@ -9702,19 +9703,19 @@ object Form2: TForm2
     ParentFont = False
   end
   object Button2: TButton
-    Left = 364
+    Left = 0
     Height = 39
-    Top = 430
-    Width = 806
+    Top = 504
+    Width = 1242
     Caption = 'Close'
     OnClick = Button2Click
     ParentFont = False
     TabOrder = 1
   end
   object Label3: TLabel
-    Left = 364
+    Left = 436
     Height = 26
-    Top = 372
+    Top = 458
     Width = 70
     Caption = 'Label3'
     ParentColor = False
@@ -9722,9 +9723,9 @@ object Form2: TForm2
   end
   object plURLLabel1: TplURLLabel
     Cursor = crHandPoint
-    Left = 480
+    Left = 552
     Height = 26
-    Top = 331
+    Top = 417
     Width = 682
     Caption = 'https://gitlab.com/psposito/camera-control-webcam-switch-indicator'
     Font.Color = clBlue
