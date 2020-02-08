@@ -161,9 +161,50 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 ###         https://youtu.be/1B0s8MFfnTg
 
--   [![](http://img.youtube.com/vi/iqOZ8A2S-zg/0.jpg)](http://www.youtube.com/watch?v=iqOZ8A2S-zg "CameraControl-1.2")
+-   Camera Control Final Release Qt5, [1.2 Release](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/-/tags/1.2)
+
+    [![](http://img.youtube.com/vi/iqOZ8A2S-zg/0.jpg)](http://www.youtube.com/watch?v=iqOZ8A2S-zg "CameraControl-1.2")
 
 ###         https://youtu.be/iqOZ8A2S-zg
+
+-   Video Reproduction
+
+-    Steps executed before starting this Video
+
+-    Cheese Photo and Video Video capture runs as "malware application". 
+-    Note that the Camera Control Application does not run yet
+-    Terminal (below on the left is the "hacker" emulation.
+
+-    Video Steps:
+
+-    Will open the Camera Control and freeze Cheese.
+
+-    Will emulate Hacking Actions on the Terminal.
+
+-    Cheese restarted, so the module could not be removed from "Hackers", 
+     actions. Will go again with sudo rmmod -f uvcvideo, sorry it is not 
+     shown by mistake on the video, you may try it by yourself.
+
+-    Closing Cheese.
+
+-    Now cheese is frozen again. This is now the default action of Camera Off.
+
+-    Logs Cleared and Shield Icon returned with normal status.
+
+-    Systems Actions Menu (new).
+
+-    On the Reboot Message, if Cancel is pressed the Whitelisting of the Camera 
+     will roll-back (Undone) Blacklisted, depending on the last Chozen Action.
+
+-    Note the Errors. They are both correct, ever since Camera was not Blacklisted 
+     before.
+
+-    Note the new Menus per Icon.
+
+-   Thats It!
+
+-   Please report, by opening your possible [issues](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues) on Project's GitLab Page, after reading the Closed ones.
+
 
 # Prerequisites 
 
