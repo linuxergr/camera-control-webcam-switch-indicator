@@ -92,9 +92,11 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
     ![Screenshot](https://imgur.com/4kG1dCN.png)
     
-- Note that before reboot, all Blacklist/Whitelist functions are being reverted (Undone), if Cancel button is pressed at the Reboot Warning Form:
+- Reboot Window: 
 
     ![Sreenshot](https://imgur.com/eGKNVKC.png)
+    
+- ### Note that before reboot, all Blacklist/Whitelist functions are being reverted (Undone), if Cancel button is pressed.
 
 - About: 
 
