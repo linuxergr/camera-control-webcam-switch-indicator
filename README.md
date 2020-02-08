@@ -33,32 +33,36 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 - ### 2nd of Feb, 2020, final Development Stage for Release, Closed Project's Target Issue [#1](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/1), External Events (hacking) Warnings and Logs, please read it for further details
 - ### 4th of Feb,2020, Closed milestone [#4](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/4) 
 - ### 5th of Feb, 2020, new [Release 1.1](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/-/tags/1.1), was created and considering around the next step, to add Permanent Actions Menu Options: 
+- ### 7th of Feb, 2020, Finished basic Development. Qt5 and some other functions have been added, check below, or at [#5](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/5)
 
-    ![Screenshot](https://imgur.com/vw6zPPM.png)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Screenshots: 
-### (Leftside of images is the Camera / Microphone Shield status tray icon / Right side is the Camera Control tray icon):
+### (Leftside of images is the System Blacklist/Whitelist added functions, Camera / Microphone Shield status tray icon, Microphone Staus Icon and the last is the Camera Control tray icon):
 
-- Camera on, Microphone Unmuted:
+- Microphone Unmuted, Camera On:
 
-    ![Screenshot](https://imgur.com/I8S4mJF.png)    
+    ![Screenshot](https://imgur.com/LR9EsOP.png)
 
 - Switch Camera to Off:
     
-    ![Screenshot](https://imgur.com/JfVuGQY.png) 
+    ![Screenshot](https://imgur.com/mzLaFmi.png) 
 
-- Camera Off:
+- Camera is Off for the User and Applications using the Webcam driver, are stopped-frozen (Not killed yet, still searching the way(?), if achieved) [#5](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/5):
 
-    ![Screenshot](https://imgur.com/YObzn0e.png)
+    ![Screenshot](https://imgur.com/f18C2WU.png)
+    
+    [![](http://img.youtube.com/vi/ncFUDIMkdpw/0.jpg)](http://www.youtube.com/watch?v=ncFUDIMkdpw "Issue #5")
+    
+    [YouTube link](https://youtu.be/ncFUDIMkdpw)
 
 - Switch Microphone to Mute:
     
-    ![Screenshot](https://imgur.com/arNUBSa.png)
+    ![Screenshot](https://imgur.com/X59w7Qq.png)
 
 - Camera Off, Microphone Muted:
 
-    ![Screenshot](https://imgur.com/c4OU1SX.png)
+    ![Screenshot](https://imgur.com/Edhnlmr.png)
 
 - Sudo password input, normally entered once per application session, or if Password Reset has been executed:
     
@@ -68,21 +72,33 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
     
     ![Screenshot](https://imgur.com/wbHBcjG.png)
 
-- Shield event status:
+- Shield event status (Microphone was hacked, switched status to Unmuted):
 
-    ![Screenshot](https://imgur.com/EDK0Liu.png)
+    ![Screenshot](https://imgur.com/YGnCAdy.png)
     
 - Events Log menu:
     
-    ![Screenshot](https://imgur.com/9KKZa2u.png)
+    ![Screenshot](https://imgur.com/K4O5yaY.png)
 
-- external Events Log List:
+- External Events (hacked) Log List:
     
     ![Screenshot](https://imgur.com/5f5K4d8.png)
 
+- Logs cleared, Shield Status Icon, changed:
+
+    ![Screenshot](https://imgur.com/yAnk8Mw.png)
+
+- System Menu (Blaclist/Whitelist Camera and/or Microphone), About and Exit functions: 
+
+    ![Screenshot](https://imgur.com/4kG1dCN.png)
+    
+- Note that before reboot, all Blacklist/Whitelist functions are being reverted (Undone), if Cancel button is pressed at the Reboot Warning Form:
+
+    ![Sreenshot](https://imgur.com/eGKNVKC.png)
+
 - About: 
 
-    ![Screenshot](https://imgur.com/XB9hrBY.png)
+    ![Screenshot](https://imgur.com/a0s2Mee.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Project History:
@@ -90,6 +106,7 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 - Created at 23th of January 2020, from scratch with Free Pascal, please ref. to the below, why
 - Redesigned and further Developed at 28th of January 2020, in order to provide Camera and Mic status alone with On/Off and Mute/Unmute fuctions   
 - Added feeling of Malware or unwanted functions, i.e. if Camera switches On, when is Off, the tray icon will change state accordingly. Tha same is valid for the microphone mute/unmute
+- Added System Blacklist/Whitelist Kernel Modules Functions, new menus, etc.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Why on Free (Object) Pascal](https://dubst3pp4.github.io/post/2017-10-03-why-i-use-object-pascal/) and not Python3 or any other?
@@ -129,6 +146,8 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 -   [![](http://img.youtube.com/vi/1B0s8MFfnTg/0.jpg)](http://www.youtube.com/watch?v=1B0s8MFfnTg "CameraControlQt5") [(Qt5 Stage of Development)](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/4)
 
 ###         https://youtu.be/1B0s8MFfnTg
+
+### Latest Video isbeing prepared. Stay tuned...
 
 # Notes
 
