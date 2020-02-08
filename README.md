@@ -100,7 +100,9 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 - About: 
 
-    ![Screenshot](https://imgur.com/zDiZ7jy.png)
+    ![Screenshot](https://imgur.com/JQbK2EP.png)
+    
+    (click on the links to open)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Project History:
