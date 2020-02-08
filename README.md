@@ -161,7 +161,9 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 ###         https://youtu.be/1B0s8MFfnTg
 
-### Latest Video is being prepared. Stay tuned...
+-   [![](http://img.youtube.com/vi/iqOZ8A2S-zg/0.jpg)](http://www.youtube.com/watch?v=iqOZ8A2S-zg "CameraControl-1.2")
+
+###         https://youtu.be/iqOZ8A2S-zg
 
 # Prerequisites 
 
