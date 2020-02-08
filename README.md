@@ -33,7 +33,9 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 - ### 2nd of Feb, 2020, final Development Stage for Release, Closed Project's Target Issue [#1](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/1), External Events (hacking) Warnings and Logs, please read it for further details
 - ### 4th of Feb,2020, Closed milestone [#4](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/4) 
 - ### 5th of Feb, 2020, new [Release 1.1](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/-/tags/1.1), was created and considering around the next step, to add Permanent Actions Menu Options: 
-- ### 7th of Feb, 2020, Finished basic Development. Qt5 and some other functions have been added, check below, or at [#5](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/5)
+- ### 7th of Feb, 2020, Finished basic Development. Qt5 and some other functions have been added, check below, or at [#5](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/5) 
+- ### 8th of Feb, 2020, Confirmed Qt5 Build, Gnome 3 Running OK - Next releases, as from 1.2 will be only Qt5 builds 
+-   ![Screnshot](https://imgur.com/hbzertb.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
