@@ -98,7 +98,7 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 - About: 
 
-    ![Screenshot](https://imgur.com/a0s2Mee.png)
+    ![Screenshot](https://imgur.com/zDiZ7jy.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Project History:
@@ -115,9 +115,13 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 - Easier code maintenance, really important in the long term
 
-- Nice memory footprint... 29.4 MB with much more Graphical User Interface (two icon trays, one About Form and one Main Form), versus 23.2 MB of Camera Monitor Python3 (one trayicon, no Graphical User Interface). For Desktop PCs is not a big deal, but Linux does not run only on Desktops PCs.
+- Nice memory footprint... 29.4 MB (on 1st stage of Development) better than camera monitor) with much more Graphical User Interface (two icon trays, one About Form and one Main Form), versus 23.2 MB of Camera Monitor Python3 (one trayicon, no Graphical User Interface). For Desktop PCs is not a big deal, but Linux does not run only on Desktops PCs.
 
     ![Screenshot](https://imgur.com/A7rIahz.png)
+    
+- Latest Development memory footprint with all Menus, Forms and Icons, 65.9 MB (Really good):
+
+    ![Screenshot](https://imgur.com/G6Of1vS.png)
     
 - Faster startup, menus, etc. 
 - Robust tested Programming Language, over 30 years of Development
