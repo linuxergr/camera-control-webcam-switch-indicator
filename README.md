@@ -157,15 +157,15 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 #### For Desktops not based on Gtk, but on Qt i.e. KDE, LxQt etc, it may be neccessary to be installed, for proper appearance of icons, menus e.t.c., the following package: 
 
-- ##### ```qt5pas```, ```qt5gtk2``` (Arch), 
-- ##### ```libqt5pas-dev```, ```libqt5pas1``` (Debian/Ubuntu),
-- ##### ```libQt5Pas-devel```, libQt5Pas``` from [ecsos](http://download.opensuse.org/repositories/home:/ecsos/) repository, (OpenSuse Leap / Tumbleweed)
+- ##### `qt5pas`, `qt5gtk2` (Arch), 
+- ##### `libqt5pas-dev`, `libqt5pas1` (Debian/Ubuntu),
+- ##### `libQt5Pas-devel`, `libQt5Pas` from [ecsos](http://download.opensuse.org/repositories/home:/ecsos/) repository, (OpenSuse Leap / Tumbleweed)
 
 #### For Desktops not based on Qt, but on GTK i.e. Gnome, LxDE, XFCE etc, it may be neccessary to be installed, for proper appearance of icons, menus e.t.c., the following packages: 
 
-- ##### ```qt5ct``` (All Distributions)
-- ##### ```qt5-style-plugins``` (All Distributions, but OpenSuse)
-- ##### ```libqt5-qtstyleplugins-platformtheme-gtk2``` (OpenSuSe) 
+- ##### `qt5ct` (All Distributions)
+- ##### `qt5-style-plugins` (All Distributions, but OpenSuse)
+- ##### `libqt5-qtstyleplugins-platformtheme-gtk2` (OpenSuSe) 
 
 
 #### Select the name(s) from the above list, by the name of your Distribution (either major or derived from), respectively.
