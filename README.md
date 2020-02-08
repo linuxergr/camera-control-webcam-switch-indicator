@@ -157,7 +157,7 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 #### For Desktops not based on Gtk, but on Qt i.e. KDE, LxQt etc, it may be neccessary to be installed, for proper appearance of icons, menus e.t.c., the following package: 
 
-- ##### `qt5pas`, `qt5gtk2` (Arch), 
+- ##### `qt5pas` (Arch, AUR), 
 - ##### `libqt5pas-dev`, `libqt5pas1` (Debian/Ubuntu),
 - ##### `libQt5Pas-devel`, `libQt5Pas` from [ecsos](http://download.opensuse.org/repositories/home:/ecsos/) repository, (OpenSuse Leap / Tumbleweed)
 
