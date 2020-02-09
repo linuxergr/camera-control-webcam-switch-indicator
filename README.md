@@ -8,37 +8,6 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Background:
-
-- Camera monitor indicates the status of the camera, but it not enough to control the on/off status.
-- Microphone mute/unmute status, has no visual indicator and is difficult to remember the switch position in the Volume Icon.
-- User can not be all the time in front of the monitor, in order to check the webcam status.
-- Such solutions, as below or by plugging in and out the usb cable, are considered funny (not to say rediculous) and unacceptable on any environment (home or business)
-
-    ![Screenshot](https://imgur.com/MmQeg2Y.png)
-
-- ##### v4l2-ctl does not provide a direct way to switch Camera, either On, or Off [Important!, ref to the [Solution](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/-/blob/master/README.md#solution-why-so)] section below
-
-    ![Screenshot](https://imgur.com/wF4RCu5.png)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-## Solution (Why so?):
-
-- #### Provide an additional, or standalone, webcam & microphone switch which loads and unloads the uvc driver, in order to be on the safe side, as much as possible, 
-- #### Provide Blacklist/Whitelist Functions, more or less aka [this](https://linoxide.com/linux-how-to/disable-webcam-microphone-linux/), in order to change permanently your settings,
-- #### Always remember that, nobody forces you to use it, if you do not want it. Linux is freedom of choices.
-
-## News:
-
-- ### 2nd of Feb, 2020, final Development Stage for Release, Closed Project's Target Issue [#1](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/1), External Events (hacking) Warnings and Logs, please read it for further details
-- ### 4th of Feb,2020, Closed milestone [#4](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/4) 
-- ### 5th of Feb, 2020, new [Release 1.1](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/-/tags/1.1), was created and considering around the next step, to add Permanent Actions Menu Options: 
-- ### 7th of Feb, 2020, Finished basic Development. Qt5 and some other functions have been added, check below, or at [#5](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/5) 
-- ### 8th of Feb, 2020, Confirmed Qt5 Build, Gnome 3 Running OK - Next releases, as from 1.2 will be only Qt5 builds 
--   ![Screnshot](https://imgur.com/hbzertb.png)
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 # Screenshots: 
 ### (Leftside of images is the System Blacklist/Whitelist added functions, Camera / Microphone Shield status tray icon, Microphone Staus Icon and the last is the Camera Control tray icon):
 
@@ -106,60 +75,9 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
     
     (click on the links to open)
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Project History:
-
-- Created at 23th of January 2020, from scratch with Free Pascal, please ref. to the below, why
-- Redesigned and further Developed at 28th of January 2020, in order to provide Camera and Mic status alone with On/Off and Mute/Unmute fuctions   
-- Added feeling of Malware or unwanted functions, i.e. if Camera switches On, when is Off, the tray icon will change state accordingly. Tha same is valid for the microphone mute/unmute
-- Added System Blacklist/Whitelist Kernel Modules Functions, new menus, etc.
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# [Why on Free (Object) Pascal](https://dubst3pp4.github.io/post/2017-10-03-why-i-use-object-pascal/) and not Python3 or any other?
-
-## Some of the main reasons are:
-
-- Easier code maintenance, really important in the long term
-
-- Nice memory footprint... 29.4 MB (on 1st stage of Development) better than camera monitor) with much more Graphical User Interface (two icon trays, one About Form and one Main Form), versus 23.2 MB of Camera Monitor Python3 (one trayicon, no Graphical User Interface). For Desktop PCs is not a big deal, but Linux does not run only on Desktops PCs.
-
-    ![Screenshot](https://imgur.com/A7rIahz.png)
-    
-- Latest Development memory footprint with all Menus, Forms and Icons, 78.4 + 2.9 = 80.9 MB (Really good):
-
-    ![Screenshot](https://imgur.com/UILkR7y.png)
-    
-    ![Screenshot](https://imgur.com/JXkZytA.png)
-    
-    
-    
-- Faster startup, menus, etc. 
-- Robust tested Programming Language, over 30 years of Development
-- Nice Gui touch (Contemporary Looking Components)
-- Very big support community, fast responding
-- Others
-
-## GitLab bug, shows the Project as Visual Basic and a part as Free Pascal, which is incorrect
-
--   ![Screenshot](https://imgur.com/BWibNGZ.png)
-    
- 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Video Demos: 
 
-### (click on them, or click on the links below them, or click and open the [Youtube Playlist](https://www.youtube.com/watch?v=iqOZ8A2S-zg&list=PLAG2B-41QEHVhg2O8flo-gUIE1Mfg8iRt))
-
--   [![Camera Control](http://img.youtube.com/vi/pUuoOgVzXNU/0.jpg)](http://www.youtube.com/watch?v=pUuoOgVzXNU "Camera Control Video") (1st Stage of Development)
-
--   ### https://youtu.be/pUuoOgVzXNU 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
--   [![](http://img.youtube.com/vi/MiGO4id309g/0.jpg)](http://www.youtube.com/watch?v=MiGO4id309g "Camera and Microphone Control for Linux 2") (2nd Stage of Development)
-
--   ### https://youtu.be/MiGO4id309g 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
--   [![](http://img.youtube.com/vi/1B0s8MFfnTg/0.jpg)](http://www.youtube.com/watch?v=1B0s8MFfnTg "CameraControlQt5") [(Qt5 Stage of Development)](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/4)
-
--   ### https://youtu.be/1B0s8MFfnTg
+### (click the links below them, or click and open the [Youtube Playlist](https://www.youtube.com/watch?v=iqOZ8A2S-zg&list=PLAG2B-41QEHVhg2O8flo-gUIE1Mfg8iRt))
 
 ##   Camera Control Final Release Qt5, [1.2](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/-/tags/1.2) Release.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -167,43 +85,6 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 -   ### https://youtu.be/iqOZ8A2S-zg
 
-### Video Reproduction:
-
--    Steps executed before starting this Video
-
--    Cheese Photo and Video Video capture runs as "malware application". 
--    Note that the Camera Control Application does not run yet
--    Terminal (below on the left is the "hacker" emulation.
-
--    Video Steps:
-
--    Will open the Camera Control and freeze Cheese.
-
--    Will emulate Hacking Actions on the Terminal.
-
--    Cheese restarted, so the module could not be removed from "Hackers", 
-     actions. Will go again with sudo rmmod -f uvcvideo, sorry it is not 
-     shown by mistake on the video, you may try it by yourself.
-
--    Closing Cheese.
-
--    Now cheese is frozen again. This is now the default action of Camera Off.
-
--    Logs Cleared and Shield Icon returned with normal status.
-
--    Systems Actions Menu (new).
-
--    On the Reboot Message, if Cancel is pressed the Whitelisting of the Camera 
-     will roll-back (Undone) Blacklisted, depending on the last Chozen Action.
-
--    Note the Errors. They are both correct, ever since Camera was not Blacklisted 
-     before.
-
--    Note the new Menus per Icon.
-
--   Thats It!
-
--   Please report, by opening your possible [issues](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues) on Project's GitLab Page, after reading the Closed ones.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Prerequisites 
 
@@ -221,3 +102,5 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 
 #### Select the name(s) from the above list, by the name of your Distribution (either major or derived from), respectively.
+
+# Further Details at the [Wiki](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/-/wikis/Project-History-and-other-Details)
