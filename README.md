@@ -139,9 +139,9 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 - Very big support community, fast responding
 - Others
 
-## GitLab bug, shows PKGBUILD as Visual Basic part, which is incorrect
+## GitLab bug, shows the Project as Visual Basic and a part as Free Pascal, which is incorrect
 
--   ![Screenshot](https://imgur.com/hb9FcKJ.png)
+-   ![Screenshot](https://imgur.com/BWibNGZ.png)
     
  
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
