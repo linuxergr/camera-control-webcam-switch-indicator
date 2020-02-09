@@ -49,77 +49,68 @@ implementation
 
 { TForm4 }
 
-procedure CheckSStatus;
-begin
-     if (S <> 0) then
-        begin
-             if (S = 256) then
-                begin
-                     ShowMessage('Incorrect password');
-                end;
-             if (S <> 256) then
-                begin
-                     ShowMessage('Error Number: ' + IntToStr(S));
-                end;
-       end;
-end;
-
 procedure UndoCameraBlacklist;
 begin
+     CmdString     := '';
      Password      := Form4.Password;
      FileDestDir   := '/etc/modprobe.d/blacklistuvcvideo.conf';
-     CmdString     := Concat('echo ', Password, ' | sudo -S rm ', FileDestDir);
+     CmdString     := Concat(Concat(Concat('echo ', Password), ' | sudo -S rm -f '), FileDestDir);
      S             := FpSystem(CmdString);
-     CheckSStatus;
      if (S <> 0) then
         begin
              ShowMessage('Something went wrong with Undo. Please reverse your last action from the Menu!');
         end;
+     CmdString     := '';
+
 end;
 
 
 procedure UndoCameraWhitelist;
 
 begin
+     CmdString     := '';
      Password      := Form4.Password;
      HomeDir       := expandfilename('~/');
      FileString    := Concat(HomeDir,'.blacklistuvcvideo ');
      FileDestDir   := '/etc/modprobe.d/blacklistuvcvideo.conf';
-     CmdString     := Concat('echo ', Password, ' | sudo -S cp ', FileString, FileDestDir);
+     CmdString     := Concat(Concat(Concat(Concat('echo ', Password), ' | sudo -S cp '), FileString), FileDestDir);
      S             := FpSystem(CmdString);
-     CheckSStatus;
      if (S <> 0) then
         begin
              ShowMessage('Something went wrong with Undo. Please reverse your last action from the Menu!');
         end;
+     CmdString     := '';
 end;
 
 procedure UndoAudioBlacklist;
 begin
+     CmdString     := '';
      Password      := Form4.Password;
-     FileString    := '/etc/modprobe.d/blacklistaudio.conf';
-     CmdString     := Concat('echo ', Password, ' | sudo -S rm ', FileString);
+     FileDestDir   := '/etc/modprobe.d/blacklistaudio.conf';
+     CmdString     := Concat(Concat(Concat('echo ', Password), ' | sudo -S rm -f '), FileDestDir);
+     ShowMessage(CmdString);
      S             := FpSystem(CmdString);
-     CheckSStatus;
      if (S <> 0) then
         begin
              ShowMessage('Something went wrong with Undo. Please reverse your last action from the Menu!');
         end;
+     CmdString     := '';
 end;
 
 procedure UndoAudioWhitelist;
 begin
+     CmdString     := '';
      Password      := Form4.Password;
      HomeDir       := expandfilename('~/');
      FileString    := Concat(HomeDir,'.blacklistaudio ');
      FileDestDir   := '/etc/modprobe.d/blacklistaudio.conf ';
-     CmdString     := Concat('echo ', Password, ' | sudo -S cp ', FileString, FileDestDir);
+     CmdString     := Concat(Concat(Concat(Concat('echo ', Password), ' | sudo -S cp '), FileString), FileDestDir);
      S             := FpSystem(CmdString);
-     CheckSStatus;
      if (S <> 0) then
         begin
              ShowMessage('Something went wrong with Undo. Please reverse your last Action from the Menu!');
         end;
+     CmdString     := '';
 end;
 
 procedure UndoLastAction;
@@ -138,17 +129,17 @@ begin
              UndoCameraBlacklist;
         end;
      if (LastAction = 1) then
-         begin
-              UndoCameraWhitelist;
-         end;
+        begin
+             UndoCameraWhitelist;
+        end;
      if (LastAction = 2) then
-         begin
-              UndoAudioBlacklist;
-         end;
+        begin
+             UndoAudioBlacklist;
+        end;
      if (LastAction = 3) then
-         begin
-              UndoAudioWhitelist;
-         end;
+        begin
+             UndoAudioWhitelist;
+        end;
      if (S = 0) then
         begin
              ShowMessage('Your last Action was undone, successfuly!');
