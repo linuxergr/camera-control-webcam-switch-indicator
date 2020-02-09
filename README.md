@@ -151,21 +151,21 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 -   [![Camera Control](http://img.youtube.com/vi/pUuoOgVzXNU/0.jpg)](http://www.youtube.com/watch?v=pUuoOgVzXNU "Camera Control Video") (1st Stage of Development)
 
-- ###               https://youtu.be/pUuoOgVzXNU 
+-   ### https://youtu.be/pUuoOgVzXNU 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -   [![](http://img.youtube.com/vi/MiGO4id309g/0.jpg)](http://www.youtube.com/watch?v=MiGO4id309g "Camera and Microphone Control for Linux 2") (2nd Stage of Development)
 
-- ###               https://youtu.be/MiGO4id309g 
+-   ### https://youtu.be/MiGO4id309g 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -   [![](http://img.youtube.com/vi/1B0s8MFfnTg/0.jpg)](http://www.youtube.com/watch?v=1B0s8MFfnTg "CameraControlQt5") [(Qt5 Stage of Development)](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/4)
 
-- ###               https://youtu.be/1B0s8MFfnTg
+-   ### https://youtu.be/1B0s8MFfnTg
 
 ##   Camera Control Final Release Qt5, [1.2](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/-/tags/1.2) Release.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -   [![](http://img.youtube.com/vi/iqOZ8A2S-zg/0.jpg)](http://www.youtube.com/watch?v=iqOZ8A2S-zg "CameraControl-1.2")
 
-- ###               https://youtu.be/iqOZ8A2S-zg
+-   ### https://youtu.be/iqOZ8A2S-zg
 
 ### Video Reproduction:
 
