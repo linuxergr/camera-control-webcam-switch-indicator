@@ -1,0 +1,32 @@
+program cameracontrol;
+
+// Created at 23th of January 2020, by Linuxer (https://gitlab.com/psposito), from scratch with Free Pascal
+// Redesigned and further Developed at 28th of January 2020, by Initial developer
+// to provide Camera and Mic status alone with On/Off and Mute/Unmute fuctions
+// Developed further for intrusion feeling and logging at 2nd of February 2020, by Initial developer
+// Developed for Blacklisting/Whitelisting functions for both camera & audio at 7th of February 2020, by Initial developer
+
+{$mode objfpc}{$H+}
+{$warnings off}
+{$hints off}
+
+uses
+  {$IFDEF UNIX}
+  cthreads,
+  {$ENDIF}
+  Interfaces, // this includes the LCL widgetset
+  Forms, Main, About, Logs, Reboot
+  { you can add units after this };
+
+{$R *.res}
+
+begin
+  RequireDerivedFormResource:=True;
+  Application.Scaled:=True;
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TForm3, Form3);
+  Application.CreateForm(TForm4, Form4);
+  Application.Run;
+end.
