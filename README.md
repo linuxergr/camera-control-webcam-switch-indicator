@@ -77,7 +77,7 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 # Video Demos: 
 
-### (click the links below them, or click and open the [Youtube Playlist](https://www.youtube.com/watch?v=iqOZ8A2S-zg&list=PLAG2B-41QEHVhg2O8flo-gUIE1Mfg8iRt))
+### (click the links below them, or click and open the [Youtube Playlist](https://www.youtube.com/playlist?list=PLAG2B-41QEHVhg2O8flo-gUIE1Mfg8iRt))
 
 ##   Camera Control Final Release Qt5, [1.2](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/-/tags/1.2) Release.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
