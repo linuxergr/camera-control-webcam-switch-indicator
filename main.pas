@@ -374,8 +374,8 @@ end;
 
 procedure TForm1.MenuItem32Click(Sender: TObject); // Blacklist Audio and Reboot
 begin
-     Password := '';
-     HasPassword := false;
+     Password      := '';
+     HasPassword   := false;
      CmdString     := '';
      AskPassword;
      GetSoundCards;
