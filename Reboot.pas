@@ -129,7 +129,7 @@ begin
                //ShowMessage(Line);
                CmdString     := Concat(Concat(Concat('echo ', Password), ' | sudo -S modprobe '), Line);
                S             := FpSystem(CmdString);
-               n := n + 1;
+               Inc(n);
           end;
 
      ShowMessage('Audio Kernel Modules Reloaded. All went Ok.');
