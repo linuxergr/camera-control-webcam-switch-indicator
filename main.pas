@@ -138,6 +138,11 @@ procedure RebootSystem; forward;
 
 { TForm1 }
 
+procedure SetReleaseNo;
+begin
+     ReleaseNo := '1.2.3';
+end;
+
 procedure GetMicCaptureStatus;
 var
      AStringList : TStringList;
@@ -167,7 +172,7 @@ end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
-     ReleaseNo                   := '1.2-1';
+     SetReleaseNo;
      application.showmainform    := false;    // Hide Main form
      HasPassword                 := false;
      CamImageIndex               := 0;
@@ -294,6 +299,9 @@ procedure TForm1.MenuItem27Click(Sender: TObject);  // Blaclist Camera and Reboo
 var
      BlackListStr  : String;
 begin
+     Password := '';
+     AskPassword;
+     CmdString     := '';
      HomeDir       := expandfilename('~/');
      FileString    := Concat(HomeDir,'.blacklistuvcvideo ');
      FileDestDir   := '/etc/modprobe.d/blacklistuvcvideo.conf ';
@@ -326,10 +334,14 @@ begin
          begin
               ShowMessage('Camera was not Whitelisted');
          end;
+     CmdString     := '';
 end;
 
 procedure TForm1.MenuItem29Click(Sender: TObject);  // Whitelist Camera and Reboot
 begin
+     Password := '';
+     AskPassword;
+     CmdString     := '';
      FileDestDir   := '/etc/modprobe.d/blacklistuvcvideo.conf';
      if (FileExists(FileDestDir) = true) then
         begin
@@ -350,6 +362,7 @@ begin
          begin
               ShowMessage('Camera was not Blacklisted');
          end;
+     CmdString     := '';
 end;
 
 procedure TForm1.MenuItem2Click(Sender: TObject);   // Password Reset
@@ -361,6 +374,10 @@ end;
 
 procedure TForm1.MenuItem32Click(Sender: TObject); // Blacklist Audio and Reboot
 begin
+     Password := '';
+     HasPassword := false;
+     CmdString     := '';
+     AskPassword;
      GetSoundCards;
      HomeDir       := expandfilename('~/');
      FileString    := Concat(HomeDir,'.blacklistaudio ');
@@ -394,11 +411,15 @@ begin
          begin
               ShowMessage('Audio Card(s) not Whitelisted before');
          end;
-
+     CmdString     := '';
 end;
 
 procedure TForm1.MenuItem33Click(Sender: TObject); // Whitelistlist Audio and Reboot
 begin
+     Password := '';
+     HasPassword := false;
+     CmdString     := '';
+     AskPassword;
      FileString    := '/etc/modprobe.d/blacklistaudio.conf';
      CmdString     := Concat(Concat(Concat('echo ', Password), ' | sudo -S rm '), FileString);
 
@@ -420,7 +441,7 @@ begin
          begin
               ShowMessage('Audio Card(s) not Blacklisted before');
          end;
-
+     CmdString     := '';
 end;
 
 procedure RebootSystem;
