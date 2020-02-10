@@ -41,7 +41,6 @@ type
     MenuItem20         : TMenuItem;
     MenuItem21         : TMenuItem;
     MenuItem22         : TMenuItem;
-    MenuItem23         : TMenuItem;
     MenuItem24         : TMenuItem;
     MenuItem25         : TMenuItem;
     MenuItem26         : TMenuItem;
@@ -98,8 +97,8 @@ type
     procedure TrayIcon4Click(Sender: TObject);
     procedure VpClock1SecondChange(Sender: TObject);
   private
-    CamImageIndex    : integer;
-    MicImageIndex    : integer;
+         CamImageIndex    : integer;
+         MicImageIndex    : integer;
 
   public
 
@@ -262,7 +261,7 @@ begin
            begin
                 RightChar           := Pos(' ', AStringList.Strings[n]) + 1;
                 SndCardsStringList.AddStrings(Copy(AStringList.Strings[n], RightChar + 2, (Length(AStringList.Strings[n]))));
-                n := n + 1;
+                inc(n);
            end;
      SndCardsCountNumber := SndCardsStringList.Count - 1;
      AStringList.Free;
@@ -550,6 +549,10 @@ begin
      About.Form2.ListBox1.Items.Add(' ');
      About.Form2.ListBox1.Items.Add('Final Development Stage at 6th of February 2020, for System ');
      About.Form2.ListBox1.Items.Add('Blacklist/Whitelist Modules functions for Camera and Audio');
+     About.Form2.ListBox1.Items.Add(' ');
+     About.Form2.ListBox1.Items.Add('Bugs Corrected at 10th of February 2020, (Undo Audio Bug) ');
+     About.Form2.ListBox1.Items.Add('Password is asked every time for Blacklist/Whitelist - Better');
+     About.Form2.ListBox1.Items.Add('Security, and Password Reset was removed from System''s menu ');
      About.Form2.Show;
 end;
 
@@ -594,7 +597,7 @@ begin
                      HackedTime      := now;
                      ShowMessage('Camera hacked !!! Please Check Log');
                      Logs.Form3.StringGrid1.InsertRowWithValues(GridLine,[FormatDateTime('dd/mm/yyyy, ', HackedTime) + RightStr(DateTimeToStr(VPClock1.Time), 8), 'Camera Hacked to On']);
-                     GridLine  := GridLine + 1;
+                     Inc(GridLine);
                      CamStatus := true;
                      ImageListStatus.GetIcon(1, TrayIcon3.Icon);
                 end;
@@ -615,7 +618,7 @@ begin
                      ShowMessage('Camera hacked !!! Please Check Log');
                      Logs.Form3.StringGrid1.InsertRowWithValues(GridLine,[FormatDateTime('dd/mm/yyyy, ', HackedTime) + RightStr(DateTimeToStr(VPClock1.Time), 8), 'Camera Hacked to Off']);
                      CamStatus := false;
-                     GridLine  := GridLine + 1;
+                     Inc(GridLine);
                      ImageListStatus.GetIcon(1, TrayIcon3.Icon);
                 end;
              //ShowMessage('Camera is Off');
@@ -637,7 +640,7 @@ begin
                      ShowMessage('Microphone hacked !!! Please Check Log');
                      Logs.Form3.StringGrid1.InsertRowWithValues(GridLine,[FormatDateTime('dd/mm/yyyy, ', HackedTime) + RightStr(DateTimeToStr(VPClock1.Time), 8), 'Microphone Hacked to Muted']);
                      MicStatus := true;
-                     GridLine  := GridLine + 1;
+                     Inc(GridLine);
                      ImageListStatus.GetIcon(1, TrayIcon3.Icon);
                 end;
 
@@ -659,7 +662,7 @@ begin
                      ShowMessage('Microphone hacked !!! Please Check Log');
                      Logs.Form3.StringGrid1.InsertRowWithValues(GridLine,[FormatDateTime('dd/mm/yyyy, ', HackedTime) + RightStr(DateTimeToStr(VPClock1.Time), 8), 'Microphone Hacked to Unmuted']);
                      MicStatus := false;
-                     GridLine  := GridLine + 1;
+                     Inc(GridLine);
                      ImageListStatus.GetIcon(1, TrayIcon3.Icon);
                 end;
         end;
