@@ -104,3 +104,5 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 #### Select the name(s) from the above list, by the name of your Distribution (either major or derived from), respectively.
 
 # Further Details at the [Wiki](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/-/wikis/Project-History-and-other-Details)
+
+# For Project Releases, please add the [RSS Atom Feeds link](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/-/tags?feed_token=hAsTBdxnMmMiYYCvGoHN&format=atom), to your RSS Feed Reader.
