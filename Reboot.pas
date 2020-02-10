@@ -20,18 +20,19 @@ type
   { TForm4 }
 
   TForm4 = class(TForm)
-    Button1            : TButton;
-    Button2            : TButton;
-    ListBox1           : TListBox;
+    Button1                 : TButton;
+    Button2                 : TButton;
+    ListBox1                : TListBox;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
   private
 
   public
-        LastAction     : byte;
-        Password       : String;
-        HasPassword    : boolean;
-
+        LastAction          : byte;
+        Password            : String;
+        HasPassword         : boolean;
+        AudioStringList     : TStringList;
+        //AudioStringCounter  : integer;
   end;
 
 var
@@ -82,9 +83,62 @@ begin
      CmdString     := '';
 end;
 
-procedure UndoAudioBlacklist;
+procedure ReadAudioModulesFile;
+
+var
+  FileString  	  : string;
+  HomeDir	  : string;
+  AudioFileStream : TFileStream;
 
 begin
+     HomeDir      := expandfilename('~/');
+     FileString   := Concat(HomeDir,'.blacklistaudio');
+     //ShowMessage(Concat('Reading the contents of file: ', FileString));
+
+     AudioFileStream :=  TFilestream.Create(FileString, fmOpenRead or fmShareDenyNone);
+
+     try
+        Form4.AudioStringList := TStringlist.Create;
+        try
+           Form4.AudioStringList.LoadFromStream(AudioFileStream);
+           //ShowMessage(Form4.AudioStringList.text);
+        finally
+        end;
+
+     finally
+            AudioFileStream.free;
+     end;
+
+     //ShowMessage(Form4.AudioStringList.Text);
+     //ShowMessage(Concat(Concat('File ', FileString), ' was probably read. Press enter to stop.'));
+end;
+
+
+Procedure ReloadAudioModulesFromDisk;   // Reload Kernel Modules
+var
+   n               : integer;
+   m               : integer;
+   Line            : String;
+
+begin
+     n := 0;
+     m := Form4.AudioStringList.Count - 1;
+     while (n <= m) do
+          begin
+               Line := Copy(Form4.AudioStringList.Strings[n], 11, Length(Form4.AudioStringList.Strings[n]));
+               //ShowMessage(Line);
+               CmdString     := Concat(Concat(Concat('echo ', Password), ' | sudo -S modprobe '), Line);
+               S             := FpSystem(CmdString);
+               n := n + 1;
+          end;
+
+     ShowMessage('Audio Kernel Modules Reloaded. All went Ok.');
+end;
+
+procedure UndoAudioBlacklist;
+begin
+     ReadAudioModulesFile;
+     ReloadAudioModulesFromDisk;
      CmdString     := '';
      FileDestDir   := '';
      Password      := Form4.Password;
@@ -150,6 +204,7 @@ end;
 procedure TForm4.Button2Click(Sender: TObject);
 begin
      UndoLastAction;
+     Form4.AudioStringList.Free;
 end;
 
 procedure TForm4.Button1Click(Sender: TObject);
