@@ -140,7 +140,7 @@ procedure RebootSystem; forward;
 
 procedure SetReleaseNo;
 begin
-     ReleaseNo := '1.2.3';
+     ReleaseNo := '1.3-1';
 end;
 
 procedure GetMicCaptureStatus;
