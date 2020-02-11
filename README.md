@@ -61,7 +61,7 @@ This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)
 
 - System Menu (Blaclist/Whitelist Camera and/or Microphone), About and Exit functions: 
 
-    ![Screenshot](https://imgur.com/4kG1dCN.png)
+    ![Screenshot](https://imgur.com/6x926jP.png)
     
 - Reboot Window: 
 
