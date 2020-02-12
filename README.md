@@ -1,5 +1,7 @@
 # `Camera Control for Linux in System Tray (Notification Area)`
 
+# This is just a clone. The development continues on [GitLab](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/)
+
 A small utility to switch your webcam on/off, microphone mute/unmute for Linux Desktops ([Qt5](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/5), [Gtk3 maybe in the future](https://gitlab.com/psposito/camera-control-webcam-switch-indicator/issues/4))
 
 This project replaces the ([camera monitor](https://launchpad.net/cameramonitor)), for having the full webcam status on tray and provides for both camera and microphone switch functions aditionally.
